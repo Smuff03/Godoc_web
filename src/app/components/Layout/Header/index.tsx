@@ -1,6 +1,7 @@
 'use client'
 import { Key, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { HeaderItem } from '@/app/types/menu'
@@ -92,7 +93,8 @@ const Header: React.FC = () => {
           <div
             className={`pr-16 lg:border-r text-2xl font-bold border-black/10 duration-300 ${sticky ? 'py-3' : 'py-7'
               }`}>
-            GoDoc
+            <Image src="https://res.cloudinary.com/dioiyots5/image/upload/v1769363019/Godoc_logo_tjjyjp.png"
+              alt="Logo" width={50} height={50} />
           </div>
           <nav className='hidden lg:flex grow items-center gap-8 justify-center'>
             {headerData.map((item, index) => (
