@@ -20,24 +20,24 @@ const headerData: HeaderItem[] = [
 // about data
 const Aboutdata: aboutdata[] = [
   {
-    heading: 'About us.',
+    heading: 'Smart appointments, zero confusion',
     imgSrc: '/images/aboutus/imgOne.svg',
     paragraph:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+      'Inside the app, you can browse clinics, dentists, physiotherapists, test labs, and more, and view each doctor’s experience, timings, and clinic locations.',
     link: 'Learn more',
   },
   {
-    heading: 'Services.',
+    heading: 'One Health ID, many visits',
     imgSrc: '/images/aboutus/imgTwo.svg',
     paragraph:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+      'GoDOC gives every patient a unique, lifelong Health ID that securely links personal details, medical overview, and visit history.',
     link: 'Learn more',
   },
   {
-    heading: 'Our Works.',
+    heading: 'QR health card in your pocket',
     imgSrc: '/images/aboutus/imgThree.svg',
     paragraph:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+      'Speeds up check-ins, reduces manual data entry, and ensures critical information is available during both routine visits and emergencies.',
     link: 'Learn more',
   },
 ]
@@ -255,35 +255,35 @@ const FooterLinksData: footerlinks[] = [
     section: 'Menu',
     links: [
       { label: 'About Us', href: '#About' },
-      { label: 'Team', href: '#Team' },
+      { label: 'Features', href: '#Features' },
       { label: 'FAQ', href: '#FAQ' },
-      { label: 'Blog', href: '#Blog' },
+      { label: 'Mission', href: '#Mission' },
     ],
   },
   {
-    section: 'Category',
+    section: 'Quick Links',
     links: [
-      { label: 'Design', href: '/' },
-      { label: 'Mockup', href: '/' },
-      { label: 'View all', href: '/' },
-      { label: 'Log In', href: '/' },
+
+      { label: 'Privacy Policy', href: '/privacy-policy' },
+      { label: 'Terms of Service', href: '/terms-of-service' },
+      { label: 'Contact Us', href: '/contact' },
     ],
   },
-  {
-    section: 'Pages',
-    links: [
-      { label: '404', href: '/' },
-      { label: 'Instructions', href: '/' },
-      { label: 'License', href: '/' },
-    ],
-  },
-  {
-    section: 'Others',
-    links: [
-      { label: 'Styleguide', href: '/' },
-      { label: 'Changelog', href: '/' },
-    ],
-  },
+  // {
+  //   section: 'Pages',
+  //   links: [
+  //     { label: '404', href: '/' },
+  //     { label: 'Instructions', href: '/' },
+  //     { label: 'License', href: '/' },
+  //   ],
+  // },
+  // {
+  //   section: 'Others',
+  //   links: [
+  //     { label: 'Styleguide', href: '/' },
+  //     { label: 'Changelog', href: '/' },
+  //   ],
+  // },
 ]
 
 export const GET = () => {

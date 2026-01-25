@@ -23,19 +23,19 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Aboutus />
       <Dedicated />
+      <Aboutus />
       <Digital />
       <Beliefs />
-      <Work />
+      {/* <Work /> */}
       <Team />
       <Featured />
-      <Manage />
+      {/* <Manage /> */}
       <FAQ />
-      <Testimonial />
-      <Articles />
-      <Join />
-      <Insta />
+      {/* <Testimonial /> */}
+      {/* <Articles /> */}
+      {/* <Join /> */}
+      {/* <Insta /> */}
     </main>
   )
 }

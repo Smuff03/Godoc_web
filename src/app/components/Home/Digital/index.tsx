@@ -12,22 +12,19 @@ const Digital = () => {
             {/* COLUMN-1 */}
             <div className='pt-24 lg:pl-24'>
               <p className='text-lg font-normal text-white mb-5 tracking-widest text-center lg:text-start uppercase mt-5'>
-                Who we are
+                Our Mission
               </p>
-              <h2 className='text-white mb-8 leading-tight text-center lg:text-start lg:w-full'>
-                We are a digital agency that builds amazing products.
-              </h2>
-              <div className='text-center lg:text-start'>
-                <Link
-                  href='#'
-                  className='text-xl font-semibold text-white bg-deep-slate/80 hover:bg-deep-slate py-4 px-12 rounded-full'>
-                  Get started
-                </Link>
-              </div>
+              <h5 className='text-white mb-8 font-medium leading-8 text-center lg:text-start lg:w-full'>
+                Across India, millions of patients still carry paper files and repeat the same details at every visit, while doctors struggle to see a clear picture of their history in the few minutes they get together. GoDOC simplifies this journey by giving every patient a single digital Health ID, a QR health card, and a connected record that works the same way in clinics and medical camps.
+                <br />
+                <br />
+                Modern healthcare moves fast, but patient information often gets left behind in files, photos, and scattered apps. GoDOC brings everything together into one easy‑to‑use health profile, so doctors see what they need in seconds and patients feel confident that nothing important will be missed.
+              </h5>
+
             </div>
           </div>
           {/* COLUMN-2 */}
-          <div className='absolute -bottom-16 -right-20 xl:block hidden'>
+          <div className='absolute bottom-16 -right-20 xl:block hidden'>
             <Image
               src='/images/digital/girldoodle.svg'
               alt='doodle'

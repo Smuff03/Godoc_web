@@ -36,15 +36,14 @@ const Dedicated = () => {
                 className='absolute -top-16 -left-32 hidden lg:block'
               />
             </div>
-            <h2 className='text-center -mr-1 lg:text-start lg:leading-20 leading-14'>
-              “Dedicated to help people’s design needs.”
-            </h2>
+            <h4 className='text-center -mr-1 lg:text-start lg:leading-15 leading-14'>
+              GoDOC is designed to quietly handle the complicated parts of healthcare so that patients can focus on feeling better, not on filling forms.”
+            </h4>
             <p className='text-xl font-medium text-black/55 mt-5 text-center lg:text-start'>
-              Quis ipsum suspendisse ultrices gravida risus commodo viverra
-              maecenas accumsan lacus vel facilisis
+              Turns every check‑up into one connected story, so your care is always ready when you need it, wherever you are
             </p>
             <h5 className='mt-12 lg:pl-32 relative lg:before:block before:hidden before:absolute before:bg-black before:h-0.5 before:w-24 before:left-0 before:bottom-1/2 text-center lg:text-start'>
-              Cathy Hills, CEO
+              Samarth khade, Founder
             </h5>
           </div>
         </div>
