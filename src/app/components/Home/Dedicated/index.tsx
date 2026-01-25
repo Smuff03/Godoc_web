@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Dedicated = () => {
   return (
-    <section className='relative bg-cover bg-center overflow-hidden'>
+    <section id="About" className='relative bg-cover bg-center overflow-hidden'>
       <div className='container mx-auto max-w-7xl px-4'>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-5'>
           <Image

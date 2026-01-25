@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Digital = () => {
   return (
-    <section className='relative bg-cover bg-center overflow-hidden'>
+    <section id="Mission" className='relative bg-cover bg-center overflow-hidden'>
       <div className='container mx-auto max-w-7xl px-4'>
         <div className="rounded-3xl bg-primary bg-[url('/images/digital/bg.svg')] bg-no-repeat bg-right-top lg:pb-60 pb-32 relative">
           <div className='grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2'>

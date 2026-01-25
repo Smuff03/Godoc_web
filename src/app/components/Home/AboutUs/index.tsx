@@ -28,7 +28,7 @@ const Aboutus = () => {
   }, [])
 
   return (
-    <section id='About' className=' bg-cover bg-center overflow-hidden'>
+    <section id='Feature' className=' bg-cover bg-center overflow-hidden'>
       <div className='container mx-auto max-w-7xl px-4 relative z-1'>
         <div className='p-12 bg-grey rounded-3xl'>
           <Image

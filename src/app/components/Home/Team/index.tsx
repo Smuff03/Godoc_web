@@ -9,7 +9,7 @@ const Team = () => {
 
 const ProductDemo = () => {
   return (
-    <section className="overflow-x-hidden">
+    <section id="Tutorial" className="overflow-x-hidden">
       <div className="container mx-auto max-w-7xl px-4 relative">
         <h2 className="text-center max-w-5xl mx-auto">
           See How GoDOC Works in Real Life
