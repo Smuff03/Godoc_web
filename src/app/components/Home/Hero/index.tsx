@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Icon } from '@iconify/react/dist/iconify.js'
@@ -15,9 +14,12 @@ const Hero = () => {
   const rightAnimation = {
     initial: { x: '100%', opacity: 0 },
     animate: { x: 0, opacity: 1 },
-    exit: { x: '100%', opacity: 0 },
+    exit: { x: '-100%', opacity: 0 },
     transition: { duration: 0.6 },
   }
+
+  // UPDATED: Standard Direct Download URL from GitHub Releases
+  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v1.0.0/godoc_beta.apk";
 
   return (
     <section className='relative overflow-hidden z-1'>
@@ -31,30 +33,49 @@ const Hero = () => {
                 <span className="relative inline-flex rounded-full h-4 w-4 bg-primary"></span>
               </span>
               <p className='text-primary text-2xl md:text-3xl font-black uppercase tracking-tighter'>
-                Beta  version  is  live
+                Beta version is live
               </p>
             </div>
 
             <div className='py-2 px-5 bg-primary/15 rounded-full w-fit'>
               <p className='text-primary text-lg font-bold'>Heal with cure</p>
             </div>
-            <h1 className='mt-5'>
-              YOUR HEALTH, ONE TAP AWAY
+
+            <h1 className='mt-5 text-4xl md:text-6xl font-extrabold text-black dark:text-white leading-tight'>
+              YOUR HEALTH, <br />
+              <span className="text-primary">ONE TAP AWAY</span>
             </h1>
-            <Link href={'#'}>
-              <button className='bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode hover:cursor-pointer mt-10'>
-                Download for Android
-              </button>
-            </Link>
+
+            {/* FIXED: Using standard <a> instead of <Link> for external 93MB download 
+              to avoid "Failed to fetch" errors triggered by Next.js client routing.
+            */}
+            <div className="mt-10">
+              <a
+                href={APK_URL}
+                download="GoDoc_v1.apk"
+                className="inline-block"
+              >
+                <button className='bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode hover:cursor-pointer transition-all active:scale-95'>
+                  Download for Android
+                </button>
+              </a>
+              <p className='text-gray-400 text-sm mt-3 ml-2'>
+                Version 1.0.0-beta • 93 MB
+              </p>
+            </div>
           </div>
+
           <div className='xl:col-span-7 lg:col-span-6 lg:block hidden'>
-            <Image
-              src='https://res.cloudinary.com/dioiyots5/image/upload/v1769424231/hero_atuzsm.png'
-              alt='banner image'
-              width={600}
-              height={600}
-              className='w-full'
-            />
+            <motion.div {...rightAnimation}>
+              <Image
+                src='https://res.cloudinary.com/dioiyots5/image/upload/v1769424231/hero_atuzsm.png'
+                alt='GoDoc App Preview'
+                width={700}
+                height={700}
+                priority
+                className='w-full'
+              />
+            </motion.div>
           </div>
         </div>
       </div>
@@ -62,4 +83,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
