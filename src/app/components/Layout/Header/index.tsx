@@ -27,7 +27,7 @@ const Header: React.FC = () => {
     setSticky(window.scrollY >= 80)
   }
 
-  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v1.0.0/godoc_beta.apk";
+  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v1.0.1/godoc_Beta.apk";
 
   const handleClickOutside = (event: MouseEvent) => {
     if (
@@ -113,9 +113,8 @@ const Header: React.FC = () => {
             >
               <button
                 className='hidden lg:block bg-darkmode text-white hover:bg-transparent hover:text-darkmode border border-darkmode px-4 py-2 rounded-lg hover:cursor-pointer'
-
               >
-                Download for Android
+                Download For Android
               </button>
             </a>
 

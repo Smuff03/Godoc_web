@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Icon } from '@iconify/react/dist/iconify.js'
@@ -19,7 +20,7 @@ const Hero = () => {
   }
 
   // UPDATED: Standard Direct Download URL from GitHub Releases
-  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v1.0.0/godoc_beta.apk";
+  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v1.0.1/godoc_Beta.apk";
 
   return (
     <section className='relative overflow-hidden z-1'>
@@ -60,7 +61,7 @@ const Hero = () => {
                 </button>
               </a>
               <p className='text-gray-400 text-sm mt-3 ml-2'>
-                Version 1.0.0-beta • 93 MB
+                Version 1.0.1-beta • 93 MB
               </p>
             </div>
           </div>
