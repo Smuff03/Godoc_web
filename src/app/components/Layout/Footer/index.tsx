@@ -31,7 +31,7 @@ const footer = () => {
           {/* COLUMN-1 */}
           <div className='col-span-4'>
             <h4 className='text-white text-3xl leading-9 mb-4 lg:mb-20'>
-              GoDOC
+              GoDoc
             </h4>
             <div className='flex items-center gap-4'>
               <div className='footer-icons'>
@@ -104,12 +104,12 @@ const footer = () => {
               </p>
             </div>
             <div className='flex justify-center md:justify-end'>
-              <Link href='/'>
+              <Link href='https://sites.google.com/view/godocprivacypolicy/home'>
                 <p className='text-base text-white pr-6 hover:text-white/60 hover:underline'>
                   Privacy policy
                 </p>
               </Link>
-              <Link href='/'>
+              <Link href='https://sites.google.com/view/godocprivacypolicy/home'>
                 <p className='text-base text-white pl-6 border-solid border-l border-footer hover:text-white/60 hover:underline'>
                   Terms & conditions
                 </p>

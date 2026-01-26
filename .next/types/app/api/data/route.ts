@@ -1,4 +1,4 @@
-// File: /Users/mayur/Desktop/Projects/godoc/src/app/api/data/route.ts
+// File: C:\Users\Dell\Godoc_web\src\app\api\data\route.ts
 import * as entry from '../../../../../src/app/api/data/route.js'
 import type { NextRequest } from 'next/server.js'
 

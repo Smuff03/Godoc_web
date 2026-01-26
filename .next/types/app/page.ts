@@ -1,4 +1,4 @@
-// File: /Users/mayur/Desktop/Projects/godoc/src/app/page.tsx
+// File: C:\Users\Dell\Godoc_web\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

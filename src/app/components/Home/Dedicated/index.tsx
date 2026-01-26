@@ -17,7 +17,7 @@ const Dedicated = () => {
           {/* Left Column */}
           <div className='col-span-12 lg:col-span-6 justify-self-center'>
             <Image
-              src='/images/dedicated/man.svg'
+              src='https://res.cloudinary.com/dioiyots5/image/upload/v1769363020/appointment-removebg-preview_1_xntsxi.png'
               alt='man-icon'
               width={416}
               height={530}
@@ -37,7 +37,7 @@ const Dedicated = () => {
               />
             </div>
             <h4 className='text-center -mr-1 lg:text-start lg:leading-15 leading-14'>
-              GoDOC is designed to quietly handle the complicated parts of healthcare so that patients can focus on feeling better, not on filling forms.”
+              GoDoc is designed to quietly handle the complicated parts of healthcare so that patients can focus on feeling better, not on filling forms.”
             </h4>
             <p className='text-xl font-medium text-black/55 mt-5 text-center lg:text-start'>
               Turns every check‑up into one connected story, so your care is always ready when you need it, wherever you are

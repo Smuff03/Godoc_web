@@ -24,10 +24,21 @@ const Hero = () => {
       <div className='container mx-auto pt-24 max-w-7xl px-4'>
         <div className='grid grid-cols-12 justify-center items-center'>
           <div className='col-span-12 xl:col-span-5 lg:col-span-6 md:col-span-12 sm:col-span-12'>
+
+            <div className='flex items-center gap-4 mb-6'>
+              <span className="relative flex h-4 w-4">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-4 w-4 bg-primary"></span>
+              </span>
+              <p className='text-primary text-2xl md:text-3xl font-black uppercase tracking-tighter'>
+                Beta  version  is  live
+              </p>
+            </div>
+
             <div className='py-2 px-5 bg-primary/15 rounded-full w-fit'>
               <p className='text-primary text-lg font-bold'>Heal with cure</p>
             </div>
-            <h1>
+            <h1 className='mt-5'>
               YOUR HEALTH, ONE TAP AWAY
             </h1>
             <Link href={'#'}>
@@ -38,7 +49,7 @@ const Hero = () => {
           </div>
           <div className='xl:col-span-7 lg:col-span-6 lg:block hidden'>
             <Image
-              src='/images/hero/banner-image.png'
+              src='https://res.cloudinary.com/dioiyots5/image/upload/v1769424231/hero_atuzsm.png'
               alt='banner image'
               width={600}
               height={600}
