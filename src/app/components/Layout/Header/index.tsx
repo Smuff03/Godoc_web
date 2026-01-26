@@ -27,6 +27,8 @@ const Header: React.FC = () => {
     setSticky(window.scrollY >= 80)
   }
 
+  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v1.0.0/godoc_beta.apk";
+
   const handleClickOutside = (event: MouseEvent) => {
     if (
       signInRef.current &&
@@ -104,12 +106,19 @@ const Header: React.FC = () => {
           <div
             className={`flex items-center gap-4 pl-16 lg:border-l border-black/10 duration-300 ${sticky ? 'py-3' : 'py-7'
               }`}>
-            <button
-              className='hidden lg:block bg-darkmode text-white hover:bg-transparent hover:text-darkmode border border-darkmode px-4 py-2 rounded-lg hover:cursor-pointer'
-
+            <a
+              href={APK_URL}
+              download="GoDoc_v1.apk"
+              className="inline-block"
             >
-              Download for Android
-            </button>
+              <button
+                className='hidden lg:block bg-darkmode text-white hover:bg-transparent hover:text-darkmode border border-darkmode px-4 py-2 rounded-lg hover:cursor-pointer'
+
+              >
+                Download for Android
+              </button>
+            </a>
+
 
 
 
