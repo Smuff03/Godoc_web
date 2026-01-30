@@ -27,7 +27,7 @@ const Header: React.FC = () => {
     setSticky(window.scrollY >= 80)
   }
 
-  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v0.0.1/godoc_Beta.apk";
+  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v.0.0/godoc_v00.apk";
 
   const handleClickOutside = (event: MouseEvent) => {
     if (

@@ -20,7 +20,7 @@ const Hero = () => {
   }
 
   // UPDATED: Standard Direct Download URL from GitHub Releases
-  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v0.0.1/godoc_Beta.apk";
+  const APK_URL = "https://github.com/Smuff03/Godoc_web/releases/download/v.0.0/godoc_v00.apk";
 
   return (
     <section className='relative overflow-hidden z-1'>
@@ -61,7 +61,7 @@ const Hero = () => {
                 </button>
               </a>
               <p className='text-gray-400 text-sm mt-3 ml-2'>
-                Version 0.0.1-beta • 93 MB
+                Version 0.0-beta • 93 MB
               </p>
             </div>
           </div>
