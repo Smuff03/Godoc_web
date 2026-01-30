@@ -61,7 +61,7 @@ const Hero = () => {
                 </button>
               </a>
               <p className='text-gray-400 text-sm mt-3 ml-2'>
-                Version 1.0.1-beta • 93 MB
+                Version 0.0.1-beta • 93 MB
               </p>
             </div>
           </div>
