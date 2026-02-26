@@ -179,6 +179,9 @@ body {
     }
 }
 
+.theme-toggle-btn svg {
+    display: block;
+}
 
 .theme-toggle-btn:hover {
     border-color: var(--accent-primary) !important;
@@ -1479,85 +1482,48 @@ section {
     }
 }
 
+/* Mobile Optimization Fixes */
 @media (max-width: 768px) {
-    .container {
-        padding: 0 16px;
+    .header-content {
+        padding: 0 1rem;
+        gap: 10px;
     }
 
-    .header {
-        width: calc(100% - 32px);
-        padding: 12px 20px;
+    /* Hide text links on very small screens to save space, 
+       or stack them if you prefer a hamburger menu later */
+    .nav-menu {
+        display: none;
+        /* Recommended for clean mobile UI unless using a toggle */
     }
 
-    .hero-section {
-        padding-top: 100px;
+    .logo-text {
+        font-size: 1.2rem;
     }
 
-    .hero-text h1 {
-        font-size: 36px;
+    .btn-contact span {
+        display: none;
+        /* Only show the Mail icon on mobile to save space */
     }
 
-    .hero-subheadline {
-        font-size: 18px;
+    .btn-contact {
+        padding: 8px;
+        border-radius: 50%;
     }
 
-    .section {
-        padding: 80px 0;
-    }
-
-    .section h2 {
-        font-size: 36px;
-    }
-
-    .section-description {
-        font-size: 16px;
-    }
-
-    .phone-frame {
-        width: 250px;
-        height: 500px;
-    }
-
-    .camp-flow {
-        flex-direction: column;
-    }
-
-    .flow-arrow {
-        transform: rotate(90deg);
-    }
-
-    .tracker-grid,
-    .security-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 16px;
+    /* Fix Section Grids */
+    .section-grid {
+        grid-template-columns: 1fr !important;
+        /* Force single column */
         text-align: center;
+        gap: 2rem;
     }
 
-    .cta-wrapper {
-        padding: 60px 24px;
-    }
-
-    .cta-content h2 {
-        font-size: 32px;
-    }
-
-    .modal-content {
-        width: calc(100% - 32px);
-    }
-
-    .contact-form {
-        padding: 24px;
+    .section-visual {
+        order: -1;
+        /* Move images/visuals above text on mobile */
     }
 }
+
 
 @media (max-width: 480px) {
     .hero-text h1 {
