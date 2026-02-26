@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { QrCode, Calendar, User, Clock } from 'lucide-react';
+import { QrCode, Calendar } from 'lucide-react';
 import { mockData } from '../mock/mockData';
 
 const QRSection = () => {

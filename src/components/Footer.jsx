@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Mail, MapPin, Phone } from 'lucide-react';
+import { Heart, Mail, MapPin } from 'lucide-react';
 import { mockData } from '../mock/mockData';
 
 const Footer = () => {

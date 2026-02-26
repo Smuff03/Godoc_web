@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, History, Shield, Lock } from 'lucide-react';
+import { Shield, Lock, FileText } from 'lucide-react';
 import { mockData } from '../mock/mockData';
 
 const PrivateCaseSection = () => {
