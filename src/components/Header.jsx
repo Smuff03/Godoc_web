@@ -25,15 +25,14 @@ const Header = ({ onContactClick }) => {
                     <a href="#features">Features</a>
                     <a href="#security">Security</a>
                     <a href="#about">About</a>
-                </nav>
-
-                <div className="header-actions">
                     <motion.button className="btn-contact" onClick={onContactClick}>
                         <Mail size={18} />
                         <span>Contact</span>
                     </motion.button>
                     <ThemeToggle />
-                </div>
+                </nav>
+
+
             </div>
         </motion.header>
     );

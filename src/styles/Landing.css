@@ -63,11 +63,8 @@ body {
 }
 
 /* Container */
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
+
+
 
 /* Glass Card Effect */
 .glass-card {
@@ -85,6 +82,15 @@ body {
     transform: translateY(-2px);
 }
 
+.container {
+    width: 95%;
+    /* Increased from standard to give more breathing room */
+    max-width: 1280px;
+    /* Standardizing the max width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* ============================================
    HEADER
    ============================================ */
@@ -99,12 +105,32 @@ body {
     padding: 16px 32px;
 }
 
+
 .header-content {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 100% !important;
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    /* Minimum space between elements */
+}
+
+/* Let the navigation take up the middle space but shrink if needed */
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+    /* Reduced gap to prevent pushing buttons off-screen */
+    flex: 1;
+    justify-content: center;
+}
+
+/* CRITICAL: Prevent the buttons from being pushed off the frame */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    /* This stops the Contact button from disappearing */
 }
 
 .logo {
@@ -129,13 +155,7 @@ body {
     background-clip: text;
 }
 
-.nav-menu {
-    flex: 1;
-    /* Allows menu to take available middle space */
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
+
 
 .nav-menu a {
     color: var(--text-primary);
@@ -164,14 +184,6 @@ body {
     width: 100%;
 }
 
-.header-actions {
-    display: flex !important;
-    align-items: center !important;
-    gap: 15px !important;
-    flex-shrink: 0 !important;
-    /* Forces buttons to STAY on screen */
-    min-width: fit-content;
-}
 
 @media (max-width: 900px) {
     .nav-menu {
