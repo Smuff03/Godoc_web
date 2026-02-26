@@ -83,12 +83,11 @@ body {
 }
 
 .container {
-    width: 95%;
-    /* Increased from standard to give more breathing room */
-    max-width: 1280px;
-    /* Standardizing the max width */
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.5rem;
+    /* Standard gutter */
 }
 
 /* ============================================
@@ -96,42 +95,41 @@ body {
    ============================================ */
 .header {
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 48px);
-    max-width: 1280px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    padding: 16px 32px;
+    padding: 0.75rem 0;
 }
-
 
 .header-content {
     display: flex;
     justify-content: space-between;
+    /* Space out the 3 groups */
     align-items: center;
-    width: 100%;
-    gap: 15px;
-    /* Minimum space between elements */
+    width: 95%;
+    /* Keep a small margin from edges */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-/* Let the navigation take up the middle space but shrink if needed */
+/* Center links move as the window shrinks */
 .nav-menu {
     display: flex;
     gap: 1.5rem;
-    /* Reduced gap to prevent pushing buttons off-screen */
     flex: 1;
+    /* Allow the menu to occupy middle space */
     justify-content: center;
 }
 
-/* CRITICAL: Prevent the buttons from being pushed off the frame */
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 1rem;
     flex-shrink: 0;
-    /* This stops the Contact button from disappearing */
+    /* Prevents button from getting squashed */
 }
+
 
 .logo {
     display: flex;
@@ -1495,44 +1493,45 @@ section {
 }
 
 /* Mobile Optimization Fixes */
+/* Mobile-Specific Adjustments (Under 768px) */
 @media (max-width: 768px) {
-    .header-content {
-        padding: 0 1rem;
-        gap: 10px;
-    }
-
-    /* Hide text links on very small screens to save space, 
-       or stack them if you prefer a hamburger menu later */
     .nav-menu {
         display: none;
-        /* Recommended for clean mobile UI unless using a toggle */
+        /* Hide text links to prevent overlapping on mobile */
     }
 
     .logo-text {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        /* Smaller logo text for mobile */
     }
 
-    .btn-contact span {
+    .contact-label {
         display: none;
         /* Only show the Mail icon on mobile to save space */
     }
 
     .btn-contact {
-        padding: 8px;
+        padding: 10px;
         border-radius: 50%;
+        /* Make it a circular icon button */
     }
 
-    /* Fix Section Grids */
+    /* Stack Hero content vertically */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        /* Adjusted for mobile screens */
+    }
+
+    /* Stack section grids properly */
     .section-grid {
         grid-template-columns: 1fr !important;
-        /* Force single column */
-        text-align: center;
-        gap: 2rem;
-    }
-
-    .section-visual {
-        order: -1;
-        /* Move images/visuals above text on mobile */
+        gap: 3rem;
     }
 }
 
