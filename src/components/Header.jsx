@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
-import { useTheme } from '../context/ThemeContext'; // Check this path!
 
 const Header = ({ onContactClick }) => {
     return (
@@ -29,6 +28,7 @@ const Header = ({ onContactClick }) => {
                     <a href="#features">Features</a>
                     <a href="#security">Security</a>
                     <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
                 </nav>
 
                 <div className="header-actions">

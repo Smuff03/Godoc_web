@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Mail, Phone, User } from 'lucide-react';
+import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import toast from 'react-hot-toast';
 
