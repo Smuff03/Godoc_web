@@ -40,7 +40,7 @@ const CampSection = () => {
                                 <MapPin size={32} />
                             </div>
                             <h3>Create Camp</h3>
-                            <p>Doctor sets up a medical camp with location and timing</p>
+                            <p>Doctor sets up a medical camp with location, speciality and timing</p>
                         </motion.div>
 
                         <motion.div
