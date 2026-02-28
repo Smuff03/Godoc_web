@@ -64,9 +64,8 @@ body {
 html,
 body {
     overflow-x: hidden;
+    position: relative;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .app {
@@ -1578,6 +1577,55 @@ section {
     }
 }
 
+@media (max-width: 850px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .hamburger {
+        display: block !important;
+        z-index: 2000;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Hidden off-screen to the right */
+        width: 70%;
+        /* Occupy 70% of screen */
+        height: 100vh;
+        background: var(--bg-secondary);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 100px 20px;
+        transition: 0.3s ease-in-out;
+        z-index: 1500;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        right: 0;
+        /* Slide in! */
+    }
+
+    .mobile-only-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    /* Fix the "Left-Aligned" Hero/Content */
+    .hero-content,
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
 
 @media (max-width: 480px) {
     .nav-menu {
