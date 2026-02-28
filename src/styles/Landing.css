@@ -94,40 +94,52 @@ body {
    HEADER
    ============================================ */
 .header {
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    background: var(--card-bg);
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
-    padding: 0.75rem 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Hide mobile items on desktop */
+.mobile-actions {
+    display: none;
+}
+
+.hamburger {
+    display: none;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
-    /* Space out the 3 groups */
     align-items: center;
     width: 95%;
-    /* Keep a small margin from edges */
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-/* Center links move as the window shrinks */
-.nav-menu {
-    display: flex;
-    gap: 1.5rem;
-    flex: 1;
-    /* Allow the menu to occupy middle space */
-    justify-content: center;
-}
-
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-shrink: 0;
-    /* Prevents button from getting squashed */
+    gap: 10px;
+    /* Minimum breathing room */
 }
 
 
@@ -186,6 +198,10 @@ body {
 @media (max-width: 900px) {
     .nav-menu {
         display: none !important;
+    }
+
+    .logo-text {
+        font-size: 1rem;
     }
 }
 
@@ -1484,7 +1500,13 @@ section {
     }
 
     .nav-menu {
-        display: none;
+        gap: 1rem;
+        /* Reduce gap on tablets/smaller laptops */
+    }
+
+    .nav-menu a {
+        font-size: 0.9rem;
+        /* Slightly smaller text */
     }
 
     .footer-content {
@@ -1495,48 +1517,57 @@ section {
 /* Mobile Optimization Fixes */
 /* Mobile-Specific Adjustments (Under 768px) */
 @media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        /* Hide text links to prevent overlapping on mobile */
-    }
-
-    .logo-text {
-        font-size: 1.1rem;
-        /* Smaller logo text for mobile */
-    }
-
-    .contact-label {
-        display: none;
-        /* Only show the Mail icon on mobile to save space */
-    }
-
-    .btn-contact {
-        padding: 10px;
-        border-radius: 50%;
-        /* Make it a circular icon button */
-    }
-
-    /* Stack Hero content vertically */
-    .hero-content {
-        flex-direction: column;
+    .hero {
         text-align: center;
-        padding-top: 100px;
+        padding: 40px 20px;
     }
 
-    .hero-text h1 {
-        font-size: 2rem;
-        /* Adjusted for mobile screens */
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--card-bg);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        transform: translateY(-120%);
+        transition: transform 0.3s ease-in-out;
     }
 
-    /* Stack section grids properly */
-    .section-grid {
-        grid-template-columns: 1fr !important;
-        gap: 3rem;
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero img {
+        margin: 0 auto;
+        display: block;
     }
 }
 
 
 @media (max-width: 480px) {
+    .nav-menu {
+        gap: 0.5rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.75rem;
+    }
+
     .hero-text h1 {
         font-size: 28px;
     }
