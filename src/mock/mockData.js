@@ -123,7 +123,7 @@ export const mockData = {
                 links: ["Privacy Policy", "Terms of Service", "HIPAA Compliance"]
             }
         ],
-        copyright: "© 2025 GoDoc. All rights reserved."
+        copyright: "© 2026 GoDoc. All rights reserved."
     }
 };
 
