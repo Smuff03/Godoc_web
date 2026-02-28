@@ -1521,9 +1521,8 @@ section {
 /* Mobile Optimization Fixes */
 /* Mobile-Specific Adjustments (Under 768px) */
 @media (max-width: 768px) {
-    .hero {
-        text-align: center;
-        padding: 40px 20px;
+    .hero-section {
+        padding: 40px 16px;
     }
 
     .desktop-only {
@@ -1558,6 +1557,10 @@ section {
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }
+
+    .header-content {
+        padding: 0 16px;
     }
 
     .hero img {
