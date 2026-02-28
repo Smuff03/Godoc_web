@@ -1522,6 +1522,10 @@ section {
         padding: 40px 20px;
     }
 
+    .desktop-only {
+        display: none;
+    }
+
     .nav-links {
         position: absolute;
         top: 70px;

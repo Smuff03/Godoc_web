@@ -87,11 +87,13 @@ const QRSection = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5, duration: 0.5 }}
                             >
-                                <motion.div
-                                    className="scan-line"
-                                    animate={{ y: [0, 100, 0] }}
-                                    transition={{ duration: 2, repeat: Infinity }}
-                                />
+                                <div className="scan-animation desktop-only">
+                                    <motion.div
+                                        className="scan-line"
+                                        animate={{ y: [0, 100, 0] }}
+                                        transition={{ duration: 2, repeat: Infinity }}
+                                    />
+                                </div>
                             </motion.div>
                         </div>
                     </motion.div>
