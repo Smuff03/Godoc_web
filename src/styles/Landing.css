@@ -61,10 +61,19 @@ body {
     overflow-x: hidden;
 }
 
-.app {
-    min-height: 100vh;
-    position: relative;
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+.app {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 
 /* Container */
 
