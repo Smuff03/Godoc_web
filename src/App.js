@@ -28,7 +28,7 @@ function App() {
     });
 
     // 2. Trigger the APK download
-    const apkLink = "https://github.com/Smuff03/Godoc_web/releases/download/v0.1/godoc_v0.1.apk";
+    const apkLink = "https://github.com/Smuff03/Godoc_web/releases/download/v0.1/GoDoc_beta.apk";
     window.location.href = apkLink;
   };
 

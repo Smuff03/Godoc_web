@@ -38,3 +38,5 @@ const Header = ({ onContactClick }) => {
         </header>
     );
 };
+
+export default Header;
