@@ -19,10 +19,7 @@ const Header = ({ onContactClick }) => {
                     <a href="#features" onClick={() => setIsOpen(false)}>Features</a>
                     <a href="#security" onClick={() => setIsOpen(false)}>Security</a>
                     <a href="#about" onClick={() => setIsOpen(false)}>About</a>
-                    <div className="mobile-only-actions">
-                        <button className="btn-contact" onClick={onContactClick}>Contact</button>
-                        <ThemeToggle />
-                    </div>
+
                 </nav>
 
                 <div className="header-actions desktop-only">
